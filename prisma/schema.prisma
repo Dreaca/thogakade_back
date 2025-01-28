@@ -12,3 +12,17 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
+
+model Customer {
+  id    String @id
+  name  String
+  email String @unique
+  phone String
+}
+
+model Item {
+  itemId   String @id
+  name     String
+  quantity Int
+  price    Float
+}
