@@ -12,7 +12,7 @@ app.use("/",(req,res,next) => {
     next();
 })
 app.use('/customer',customerRoutes)
-app.use('/item',itemRoutes)
+app.use('/items',itemRoutes)
 
 app.listen(3000,(err)=>{
     console.log("Server running on port 3000");
