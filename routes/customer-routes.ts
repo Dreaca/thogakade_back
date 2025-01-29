@@ -8,7 +8,7 @@ router.post('/add', async (req, res)=> {
     const customer:Customer = req.body;
     try{
         const addedCustomer = await CustomerAdd(customer);
-        res.send(req.body)
+        // res.send(req.body)
     }catch (err){
         console.log(err)
     }
